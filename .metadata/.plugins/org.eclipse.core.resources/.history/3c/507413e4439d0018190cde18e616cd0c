@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+public class Wangyi {
+
+    public static void main(String[] args) {
+//        Scanner in = new Scanner(System.in);
+//        int n = in.nextInt();
+//        int[] number = new int[n];
+//        for(int i = 0; i < n; i++){
+//            number[i] = in.nextInt();
+//        }
+//        int m = in.nextInt();
+//        int[] times = new int[m];
+//        int total = 0;
+//        for(int i = 0; i < m; i++){
+//            times[i] = in.nextInt();
+//            total += times[i];
+//        }
+    	int n = 5;
+    	int[] number = new int[] {2,7,3,4,9};
+    	int m = 3;
+    	int[] times = new int[] {1,25,11};
+    	int total = 25;
+        helper(n, number, m, times,total);
+    }
+//    public static void helper(int n, int[] number, int m, int[] times, int total){
+//        int[] all = new int[total+1];
+//        int count = 1;
+//        for(int i = 0; i < n; i++){
+//            
+//            for(int j = 0; j < number[i]; j++){
+//                all[count++] = i+1;
+//            }
+//        }
+//        for(int i =0; i < all.length;i++) {
+//        	System.out.print(all[i]+", ");
+//        }
+//        for(int i = 0; i < m; i++){
+//            System.out.println(all[times[i]]);
+//        }
+//    }
+    public static void helper(int n, int[] number, int m, int[] times, int total){
+        int[] accs = new int[n];
+        accs[0] = number[0];
+        for(int i = 1;i < n; i++){
+            accs[i] = number[i] + accs[i-1];
+//            System.out.println(i+ "   accs = "+accs[i]);
+            }
+        for(int i = 0; i < m; i++){
+        	int a = times[i];
+            System.out.println(find(accs, times[i]));
+        }
+        }
+        
+        public static int find(int[] array, int number){
+            int l = 0;
+            int r = array.length;
+            while(l < r){
+                int m = l + (r - l)/2;
+                if(array[m]==number){
+                    return m+1;
+                }else{
+                	if((r-l)==1 && array[l]<number && number <=array[r]) {
+                		return r+1;
+                	}
+//                	System.out.println("middle "+l+"  "+r);
+                    if(array[m] > number){
+                        r = m;
+                    }else{
+                        l = m;
+                    }
+                }
+            }
+            return l+1;
+        }
+
+}

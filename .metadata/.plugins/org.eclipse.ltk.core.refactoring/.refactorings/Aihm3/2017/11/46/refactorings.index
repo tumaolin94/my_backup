@@ -1,0 +1,30 @@
+1510643961245	Rename field 'clauses'
+1510644700042	Rename field 'constants'
+1510730503270	Rename type 'Sentence'
+1510730533560	Rename field 'sentenses'
+1510730542137	Rename field 'Predicates'
+1510730598837	Rename local variable 'constants'
+1510730626890	Rename local variable 'tempConstant'
+1510732983316	Rename type 'Clause'
+1510733367235	Rename field 'numKB'
+1510739792557	Rename type 'Sentences'
+1510892913101	Copy compilation unit
+1510904377069	Copy compilation unit
+1510904436495	Copy method
+1510907700719	Move method
+1510911264218	Copy compilation unit
+1510913778732	Copy method
+1510913783767	Move method
+1510963440971	Delete element
+1510963450023	Copy method
+1510963456082	Move method
+1510964659777	Move method
+1510964667861	Copy method
+1510964673287	Move method
+1510973414365	Copy method
+1510973417572	Move method
+1510974797097	Copy file
+1510976153278	Copy file
+1510977544586	Copy compilation unit
+1510978002221	Rename type 'Homework'
+1510978402696	Delete element

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Aihm3/src/hw3&apos;&#x0D;&#x0A;- Original project: &apos;Aihm1&apos;&#x0D;&#x0A;- Destination element: &apos;Aihm3/src/hw3&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     edu.usc.cs561.WriteFile.java&#x0D;&#x0A;     edu.usc.cs561.ReadFile.java" description="Copy compilation units" destination="=Aihm3/src&lt;hw3" element1="/src&lt;edu.usc.cs561{WriteFile.java" element2="/src&lt;edu.usc.cs561{ReadFile.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1510631829675" units="2" version="1.0"/>
+</session>

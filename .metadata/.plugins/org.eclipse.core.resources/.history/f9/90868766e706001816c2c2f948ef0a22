@@ -1,0 +1,14 @@
+package drawbridge;
+
+public class WaterMelon {
+
+	public static void water(int[] boxes, int[] melons) {
+		int m = boxes.length;
+		int n = melons.length;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

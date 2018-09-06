@@ -1,0 +1,10 @@
+package solution.leetcode;
+
+public class Binarysearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

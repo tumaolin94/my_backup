@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;inDegree&apos; in &apos;drawbridge.JungleBook.junglebook(...)&apos; to &apos;indegree&apos;&#x0D;&#x0A;- Original project: &apos;drawbridge&apos;&#x0D;&#x0A;- Original element: &apos;drawbridge.JungleBook.junglebook(int[]).inDegree&apos;&#x0D;&#x0A;- Renamed element: &apos;inDegree&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;inDegree&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;drawbridge{JungleBook.java[JungleBook~junglebook~\[I@inDegree!166!203!172!179!\[I!0!false" name="indegree" references="true" stamp="1517393243648" version="1.0"/>
+</session>

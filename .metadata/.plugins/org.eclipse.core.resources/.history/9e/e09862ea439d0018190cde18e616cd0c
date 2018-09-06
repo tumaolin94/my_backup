@@ -1,0 +1,65 @@
+// 本题为考试单行多行输入输出规范示例，无需提交，不计分。
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Scanner;
+public class Wangyi {
+    public class Tower{
+        int x;
+        int h;
+        public Tower(int x, int h){
+            this.x = x;
+            this.h = h;
+        }
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int k = in.nextInt();
+        int[] heights = new int[n];
+        int i = 0;
+        PriorityQueue<Tower> minQ = new PriorityQueue<Tower>((i1,i2)->i1.h - i2.h); 
+        PriorityQueue<Tower> maxQ = new PriorityQueue<Tower>((i1,i2)->i2.h - i1.h);
+        while (in.hasNextInt()) {//注意while处理多个case
+            Tower t = new Tower(i++, in.nextInt());
+            minQ.offer(T);
+            maxQ.offer(T);
+        }
+        
+
+        int count = 1;
+        int value = 0;
+        List<String> res = new ArrayList<>();
+        while(count++ <= k){
+            Tower s = minQ.poll();
+            Tower b = maxQ.poll();
+            value = b.h - s.h;
+            if(value == 0) break;
+            s.h = s.h+1;
+            b.h = b.h-1;
+            minQ.offer(s);
+            maxQ.offer(b);
+        }
+        System.out.println(value+" "+count);
+        for(String r: res){
+            System.out.println(r);
+        }
+    }
+    
+    public void solute(int n, int k, int[] heights){
+        PriorityQueue<Integer> minQ = new PriorityQueue<Integer>(); 
+        PriorityQueue<Integer> maxQ = new PriorityQueue<Integer>((i1,i2)->i2-i1);
+        for(int h: heights){
+            minQ.add(h);
+            maxQ.add(h);
+        }
+        int value = maxQ.peek()-minQ.peek();
+        int count = 0;
+        while(count++ < k){
+            if(value == 0) break;
+            int small = minQ.poll();
+            int big = maxQ.poll();
+            
+        }
+    }
+}

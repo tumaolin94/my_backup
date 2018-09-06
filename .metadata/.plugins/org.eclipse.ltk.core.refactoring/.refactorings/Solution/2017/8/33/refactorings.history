@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Graph.java&apos; to &apos;Solution/src/solution.graph&apos;&#x0D;&#x0A;- Original project: &apos;Solution&apos;&#x0D;&#x0A;- Destination element: &apos;Solution/src/solution.graph&apos;&#x0D;&#x0A;- Original element: &apos;solution.leetcode.Graph.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;solution.graph" element1="/src&lt;solution.leetcode{Graph.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1502774858031" units="1" version="1.0"/>
+</session>

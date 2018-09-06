@@ -1,0 +1,90 @@
+
+public class Huawei1 {
+	
+	public static void main(String[] args) {
+//		System.out.println(cal(0,0));
+//		System.out.println(cal(0,1));
+//		System.out.println(cal(0,2));
+//		System.out.println(cal(0,3));
+//		System.out.println(cal(0,4));
+//		System.out.println(cal(0,5));
+//		System.out.println(cal(20,6));
+	}
+	public static void cal(int number) {    
+	       if (number < 1)    
+	           return;    
+	       int g_maxValue = 6;    
+	       int[][] probabilities = new int[2][];    
+	       probabilities[0] = new int[g_maxValue * number + 1];    
+	       probabilities[1] = new int[g_maxValue * number + 1];    
+	       int flag = 0;    
+	       for (int i = 1; i <= g_maxValue; i++)    
+	           probabilities[0][i] = 1;    
+	       for (int k = 2; k <= number; ++k) {    
+	           for (int i = 0; i < k; ++i)    
+	               probabilities[1 - flag][i] = 0;    
+	           for (int i = k; i <= g_maxValue * k; ++i) {    
+	               probabilities[1 - flag][i] = 0;    
+	               for (int j = 1; j <= i && j <= g_maxValue; ++j)    
+	                   probabilities[1 - flag][i] += probabilities[flag][i - j];    
+	           }    
+	           flag = 1 - flag;    
+	       }    
+	       double total = Math.pow(g_maxValue, number);    
+	       for (int i = number; i <= g_maxValue * number; i++) {    
+	           double ratio = (double) probabilities[flag][i] / total;    
+	           System.out.println(i);    
+	           System.out.println(ratio);    
+	       }    
+	   }    
+	
+	public static int cal2(int y, int w){
+        int[] month = new int[]{31, 31,28,31,30,31,30,31,31,30,31,30};
+
+        int count = 0;
+        int k = 6;
+        for(int i=0;i<y;i++)
+        {
+            month[2]=28;
+            if ( ((1900+i)%4==0 &&(1900+i)%100!=0) ||(1900+i)%400==0)
+            {
+                month[2]=29;    
+            }
+            for(int j=1;j<=12;j++)
+            {
+                    if(i==0 && j==1)    continue;
+                    k=(k+month[j-1]%7)%7; 
+                    if(k== w)  count++;
+            }   
+        }
+          
+        return w == 6? count+1 :count;
+    }
+	
+	public static String cal1(String s, int n) {
+        StringBuilder builder = new StringBuilder();
+        char[] cs = s.toCharArray();
+        int sum = 0;
+        for (int i = 0; i < s.length(); i++) {
+        	if(cs[i]>='0' && cs[i]<='9') continue;
+            if (String.valueOf(cs[i]).getBytes().length == 1) {
+                sum += 1;
+                
+
+                if (sum > n) {
+                    break;
+                }
+                builder.append(cs[i]);
+            } else {
+                sum += 2;
+                if (sum > n) {
+                    break;
+                }
+                builder.append(cs[i]);
+            }
+        }
+
+        return builder.toString();
+    }
+
+}

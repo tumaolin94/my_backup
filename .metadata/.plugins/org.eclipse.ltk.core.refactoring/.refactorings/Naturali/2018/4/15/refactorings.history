@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;nums&apos; in &apos;Solution2.search(...)&apos; to &apos;a&apos;&#x0D;&#x0A;- Original project: &apos;Naturali&apos;&#x0D;&#x0A;- Original element: &apos;Solution2.search(int[], int, int, int).nums&apos;&#x0D;&#x0A;- Renamed element: &apos;nums&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;nums&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Solution2.java[Solution2~search~\[I~I~I~I@nums!1653!1662!1659!1662!\[I!0!true" name="a" references="true" stamp="1523249607708" version="1.0"/>
+</session>
